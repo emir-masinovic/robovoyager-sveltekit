@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
 
 export default {
 	kit: {
@@ -7,7 +7,8 @@ export default {
 			assets: 'build',
 			fallback: undefined,
 			precompress: false,
-			strict: true
+			strict: true,
+			host: '0.0.0.0'
 		})
 	}
 };
